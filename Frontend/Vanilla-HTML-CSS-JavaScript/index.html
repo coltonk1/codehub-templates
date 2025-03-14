@@ -1,0 +1,63 @@
+<!-- 
+  index.html - Main entry point for the project
+  
+  This file serves as:
+  - The homepage of the project, providing a starting point for users.
+  - A reference for linking styles (styles.css) and scripts (script.js).
+  - A structured layout using different element types.
+  - A foundation for adding additional pages (e.g., about.html, contact.html).
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information Section -->
+    <!-- Sets the character encoding to UTF-8, supporting international characters and symbols -->
+    <meta charset="UTF-8" />
+    <!-- Configures the viewport for responsive design on mobile devices -->
+    <!-- width=device-width ensures the page matches the screen's width -->
+    <!-- initial-scale=1.0 sets the initial zoom level when the page loads -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Critical Elements -->
+    <!-- <title> and <meta name="description"> are extremely important for SEO -->
+    <!-- The <title> tag is responsible for setting the title on the page, ie what you see on google search and the top of the browser -->
+    <!-- This is one of the most important factors for search engine ranking and user clicks -->
+    <title>Project Title</title>
+    <!-- <meta> can modify various meta data, but commonly used is the description. Again, for example, this is what is shown on google search underneath the links. -->
+    <!-- A good description should be 150-160 characters and accurately summarize the page content -->
+    <meta name="description" content="A brief description of the project." />
+    <!-- External Resources -->
+    <!-- This link targets a stylesheet and loads it, which impacts how the page looks -->
+    <!-- The stylesheet contains all the CSS rules that determine colors, layout, typography, etc. -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JavaScript Integration -->
+    <!-- The 'defer' attribute ensures the script loads after HTML parsing is complete -->
+    <!-- This improves page load performance by preventing script execution from blocking rendering -->
+    <script defer src="script.js"></script>
+  </head>
+
+  <!-- The body is the main layout of the page. Everything inside will be directly shown on the layout of the page. -->
+  <body>
+    <header>
+      <h1>Project Name</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <p>This is the starting point for your project.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+  </body>
+</html>

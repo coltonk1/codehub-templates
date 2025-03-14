@@ -1,0 +1,66 @@
+/* This file is directly responsible for manipulating how the elements on the page are displayed. 
+You can modify them almost entirely how you want, and include different effects on top of them. 
+This is where hover effects, transitions, and other visual concepts are created.
+*/
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background: #555;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: #777;
+}
+
+main {
+  margin: 20px auto;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
