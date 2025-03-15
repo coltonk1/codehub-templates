@@ -214,8 +214,7 @@ To share your project with others, you have several options:
 
 ### React
 
--   [React Docs](https://reactjs.org/docs/getting-started.html)
--   [React Tutorial](https://react.dev/learn)
+-   [React Docs](https://react.dev/learn)
 
 ### Vite
 
