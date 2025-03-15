@@ -8,7 +8,7 @@ This repository contains templates for various types of coding projects that are
 
 ## Templates Available
 
-- Frontend
+-   Frontend
 
 ## Usage
 
@@ -17,7 +17,7 @@ All templates in this repository are completely free to use for your personal, a
 ### How to Use
 
 1. Browse the repository to find the template that fits your project needs
-2. Clone or download the specific template
+2. Clone or download the specific template using [https://download-directory.github.io/](https://download-directory.github.io/)
 3. Follow the README instructions within each template folder
 4. Start building your project on top of the template
 
@@ -35,16 +35,17 @@ We welcome contributions from all CodeHub members and UGA students! If you have 
 
 ### Contribution Guidelines
 
-- Include a detailed README in your template folder
-- Make sure your code is well-commented
-- Keep templates as clean and minimal as possible
-- Test your template before submitting
+-   Include a detailed README in your template folder
+-   Make sure your code is well-commented
+-   Keep templates as clean and minimal as possible
+-   Test your template before submitting
 
 ## Contact
 
 Have questions or need help with the templates?
-- Visit us during CodeHub meetings
-- Discord: [CodeHub UGA Server Link](https://discord.com/invite/vd5ZjV78SP)
+
+-   Visit us during CodeHub meetings
+-   Discord: [CodeHub UGA Server Link](https://discord.com/invite/vd5ZjV78SP)
 
 ---
 
