@@ -18,42 +18,38 @@ repositories {
 }
 
 dependencies {
-    // half of these are likely not needed
+    // Spring Boot Starter Dependencies
     implementation(platform("org.springframework.boot:spring-boot-dependencies:3.3.3"))
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("javax.servlet:javax.servlet-api:4.0.1")
     implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation("javax.validation:validation-api:2.0.1.Final")
-    implementation("jakarta.validation:jakarta.validation-api:3.1.0")
-    implementation("org.postgresql:postgresql")
-    implementation("com.auth0:java-jwt:4.4.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("org.postgresql:postgresql")
-    implementation("com.zaxxer:HikariCP")
+
+    // Database Dependencies
+    implementation("org.postgresql:postgresql") // PostgreSQL JDBC driver
+    implementation("com.zaxxer:HikariCP") // Connection pool
+
+    // JWT dependencies
+    implementation("com.auth0:java-jwt:4.4.0")
     implementation("io.jsonwebtoken:jjwt-api:0.12.6")
     implementation("io.jsonwebtoken:jjwt-impl:0.12.6")
     implementation("io.jsonwebtoken:jjwt-jackson:0.12.6")
-    implementation("com.microsoft.sqlserver:mssql-jdbc:12.2.0.jre11")
-    implementation ("mysql:mysql-connector-java:8.0.33")
+
+    // Validation and Lombok dependencies
+    implementation("jakarta.validation:jakarta.validation-api:3.1.0")
+    implementation("org.projectlombok:lombok:1.18.36")
+    compileOnly("org.projectlombok:lombok:1.18.36")
+    annotationProcessor("org.projectlombok:lombok:1.18.36")
+
+    // Testing dependencies
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation ("org.springframework.boot:spring-boot-starter-security")
-    implementation ("org.springframework.security:spring-security-config")
-    implementation ("org.springframework.security:spring-security-core")
-
-    implementation("org.projectlombok:lombok:1.18.24")
-
-    
-
-    // testImplementation('org.springframework.boot:spring-boot-starter-test')
-
-    // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
-
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-    // This dependency is used by the application.
+    // Miscellaneous
+    implementation("com.microsoft.sqlserver:mssql-jdbc:12.2.0.jre11")
+    implementation("mysql:mysql-connector-java:8.0.33")
     implementation(libs.guava)
 }
 

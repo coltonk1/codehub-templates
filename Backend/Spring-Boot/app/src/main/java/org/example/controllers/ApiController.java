@@ -19,7 +19,7 @@ import org.example.repositories.UserRepository;
 
 import java.util.*;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 // @RestController annotation indicates that this class is a RESTful controller
 // which handles HTTP requests and responses, and automatically serializes the return value into JSON.
